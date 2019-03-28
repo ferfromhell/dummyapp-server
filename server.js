@@ -10,7 +10,7 @@ var app = express();
 // });
 
 app.get('/test', function (req, res) {
-  res.json({text: "connected to server"});
+  res.status(200).json({text: "connected to server"});
 });
 
 app.listen(5000, function () {

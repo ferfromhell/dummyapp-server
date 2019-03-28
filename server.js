@@ -11,7 +11,9 @@ var app = express();
 
 app.get('/test', function (req, res) {
   console.log('req: ',req)
-  res.json({text: "connected to server"});
+  res.json({
+    servStat: "connected to server"
+  });
 });
 
 app.listen(5000, function () {
